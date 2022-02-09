@@ -1,2 +1,2 @@
-# discordle
-A discord implementation of the popular online game Wordle.
+# Discordle
+A Discord bot implementation of the popular online game Wordle.
