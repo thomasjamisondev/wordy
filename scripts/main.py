@@ -21,8 +21,10 @@ async def wordy(ctx):
 
 @bot.command(name = 'guess')
 async def guess_word(ctx, guess):
-    if bot.game_state:
+    if bot.game_state and not bot.game_state.game_over:
         await bot.game_state.guess_word(guess)
+    else:
+        await ctx.channel.send('Game is over')
 
 
 
